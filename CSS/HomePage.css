@@ -1,0 +1,206 @@
+.container header{
+    height: 150px;
+}
+header{
+    /* background-image: url(..//Image/Best_1.jpg); */
+    background-image: url(..//Image/s-Home.gif);
+    background-size: 190px;
+    background-repeat: repeat-x;
+}
+.rounded{
+    width: 80px;
+    opacity: 0.9;
+}
+#font-logo{
+    font-family: cursive;
+    font-weight: 800;
+    color: white;
+}
+.container section{
+    width: 100%;
+    margin: 0 auto;
+    font-family: cursive;
+}
+#nav-item1{
+    color: white;
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 17px;
+    text-align: center;
+}
+.dropdown-menu .dropdown-item{
+    font-family: cursive;
+    font-weight: 800;
+}
+.nav-pills .nav-item:hover{
+    background-color:  orange;
+}
+.dropdown-item:hover{
+    background-color:  orange;
+}
+.icon-login-signup{
+    display: block;
+    margin-top: -45px;
+    margin-left: 70%;
+}
+.btn-outline-warning{
+    margin: 10px;
+}
+header .fs-2{
+    position: relative;
+    top: -52px;
+    margin-left: 90px;
+    font-weight: 100px;
+    
+}
+header .input-group{
+    width: 500px;
+    position: relative;
+    top: -107px;
+    margin-left: 50%;
+}
+#search-header input{
+    height: 38px;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+#button-addon2:hover{
+    background-color: orange;
+}
+header .input-group .form-control {
+    border: 1px solid orange;
+}
+.btn-outline-secondary{
+    border: 1px solid orange;
+}
+section .input-group{
+    width: 220px;
+    
+}
+section .section-search{
+    display: block;
+    border-bottom: 1px solid orange;
+    background-repeat: repeat-x;
+    height: 100px;
+    width: 100%;
+}
+.section-search .input-group{
+    float: left;
+    padding: 10px;
+    position: relative;
+    left: -10px;
+    text-align: center;
+    margin-top: 15px;
+}
+.content-website{
+    clear: both;
+}
+.content-website .container .row{
+    margin-top: 50px;
+}
+.col-7 img{
+    padding: 2px;
+    border-radius: 5px;
+}
+.col-5 img{
+    position: relative;
+    left: 7px;
+    border-radius: 5px;
+}
+.col-4{
+    margin-top: 30px;
+    text-align: start;
+}
+.all-card{
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.card{
+    margin: 10px;
+    border-radius: 20px;
+    border-color: #e29428;
+}
+button{
+    margin-left: 30%;
+    background-color: #e29428;
+}
+.card-img-top{
+    border-radius: 20px 20px 0 0 ;
+    height: 250px;
+}
+section .fs-2{
+    margin-top: 30px;
+}
+.col-4 .fs-2{
+    margin-top: -10px;
+}
+.col-8{
+    position: relative;
+    left: 100px;
+}
+.col-4 .fs-6{
+    position: relative;
+    left: 70px;
+    text-align: justify;
+}
+.icon-question{
+    width: 100px;
+}
+.section-search .input-group *{
+    border: 1px solid orange;
+}
+.carousel-control-prev{
+    margin-left: -5px;
+}
+.carousel-item{
+    margin: auto;
+}
+.carousel-inner{
+    width: 100%;
+    height: 500px;
+}
+.carousel-inner{
+    align-items: center;
+    margin-left: 30px;
+}
+#card1{
+    left: 90px;
+}
+#card2{
+    right: 90px;
+}
+.carousel-indicators button{
+    margin-top: -50px;
+}
+#carouselExampleDark{
+    margin-top: 50px;
+}
+#carousel-item1, #carousel-item2, #carousel-item3{
+    width: 600px !important;
+    height: 400px !important;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+#carouselExampleDark1{
+    margin-top: 50px;
+}
+#footer-row{
+    box-shadow: 4px 3px 15px #dfceb6;
+
+}
+#footer-table-hover{
+    margin-top: 20px;
+}
+#d-md-block{
+    width: 500px;
+    height: 120px;
+    padding: 10px;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+#footer-bootstrap{
+    margin-top: 100px;
+}

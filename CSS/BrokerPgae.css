@@ -1,0 +1,152 @@
+header{
+    height: 150px;
+    font-family: cursive;
+    background-image: url(..//Image/s-Home.gif);
+    background-size: 190px;
+    background-repeat: repeat-x;
+}
+.rounded{
+    width: 80px;
+    opacity: 0.9;
+}
+#font-logo{
+    font-family: cursive;
+    font-weight: 800;
+    color: white;
+}
+#search-header input{
+    height: 38px;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+#button-addon2{
+    margin-top: 9px;
+    height: 39px !important;
+}
+#button-addon2:hover{
+    background-color: orange;
+}
+.container{
+    font-family: cursive;
+}
+section .fs-3{
+    margin-top: 50px;
+}
+.container header, section{
+    width: 100%;
+    margin: 0 auto;
+}
+#nav-item1{
+    color: 	white;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800;
+}
+.dropdown-item:hover{
+    background-color:  orange;
+}
+.nav-pills .nav-item:hover{
+    background-color: #fab047;
+}
+.icon-login-signup{
+    display: block;
+    margin-top: -45px;
+    margin-left: 70%;
+}
+.btn-outline-warning{
+    margin: 10px;
+}
+header .fs-2{
+    position: relative;
+    top: -52px;
+    margin-left: 90px;
+    font-weight: 100px;
+    
+}
+header .input-group{
+    width: 500px;
+    position: relative;
+    top: -107px;
+    margin-left: 50%;
+
+}
+header .input-group .form-control {
+    border: 1px solid orange;
+}
+.btn-outline-secondary{
+    border: 1px solid orange;
+}
+
+.carousel-inner img{
+    width: 70% !important;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-fluid{
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 400px;
+    opacity: 0.8;
+}
+#broker5-image{
+    width: 300px;
+    height: 200px;
+    transform: rotate(35deg);
+    opacity: 0.8;
+    position: relative;
+    top: -200px;
+    right: -300px;
+    border-radius: 20px;
+}
+#broker4-image{
+    width: 200px;
+    height: 300px;
+    transform: rotate(10deg);
+    position: relative;
+    top: -550px;
+    left: -300px;
+    border-radius: 20px;
+}
+.justify-content-center, .flex-md-equal{
+    font-style: oblique;
+    position: relative;
+    top: -450px;
+}
+.d-md-flex{
+   position: relative;
+   top: -700px;
+}
+.text-bg-dark{
+    width: 100px;
+    height: 200px;
+}
+.bg-body img{
+    box-shadow: 3px 4px 11px rgb(140, 132, 132);
+}
+iframe{
+    width: 100%;
+    position: relative;
+    top: -700px;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: -550px;
+}
+.col-7{
+    margin-top: 50px;
+}
+.col-7 ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: -30px;
+    padding: 7px;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    text-align: justify;
+}

@@ -1,0 +1,149 @@
+header{
+    height: 150px;
+    height: 150px;
+    font-family: cursive;
+    background-image: url(..//Image/s-Home.gif);
+    background-size: 190px;
+    background-repeat: repeat-x;
+}
+.rounded{
+    width: 80px;
+    opacity: 0.9;
+}
+.container header,footer{
+    width: 100%;
+    margin: 0 auto;
+}
+#font-logo{
+    font-family: cursive;
+    font-weight: 800;
+    color: white;
+}
+#nav-item1{
+    color: 	white;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800;
+}
+#search-header input{
+    height: 38px;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+#button-addon2, .form-control{
+    margin-top: 9px;
+    height: 39px !important;
+}
+.form-control{
+    opacity: 0.6;
+}
+#button-addon2:hover{
+    background-color: orange;
+}
+.dropdown-item:hover{
+    background-color:  orange;
+}
+.nav-pills .nav-item:hover{
+    background-color: #fab047;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    font-family: cursive;
+}
+.nav-pills .nav-item:hover{
+    background-color: #fab047;
+}
+.icon-login-signup{
+    display: block;
+    margin-top: -45px;
+    margin-left: 70%;
+}
+.btn-outline-warning{
+    margin: 10px;
+}
+header .fs-2{
+    position: relative;
+    top: -52px;
+    margin-left: 90px;
+    font-weight: 100px;
+    
+}
+header .input-group{
+    width: 500px;
+    position: relative;
+    top: -107px;
+    margin-left: 50%;
+
+}
+header .input-group .form-control {
+    border: 1px solid orange;
+}
+.btn-outline-secondary{
+    border: 1px solid orange;
+}
+section article{
+    width: 60%;
+}
+section #card-1{
+    padding: 20px;
+    margin-bottom: 50px;   
+    margin-top: 50px;
+}
+#card-2{
+    padding: 30px;
+}
+.input .row .col input, label{
+    margin: 4px;
+}
+.btn-warning{
+    margin-top: 15px;
+}
+aside{
+    width: 390px;
+    margin-left: 720px;
+    margin-top: -430px;
+}
+aside .card *{
+    list-style: none;
+}
+aside .card ul li{
+    margin: 8px;
+}
+.card .icon{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    color: rgb(217, 163, 0);
+}
+.content-section-2 *{
+    text-decoration: none;
+    color: black;
+}
+#card3 a .card{
+    margin: 15px;
+    width: 95%;
+    padding: 10px;
+}
+
+.content-question-4 *:hover{
+    color: orange;
+}
+.title-question h5{ 
+    background-color: orange; 
+    height: 40px; 
+    padding: 10px; 
+    color: white; 
+    font-weight: 800;
+    margin-left: 70px;
+    width: 89%;
+    border-radius: 5px;
+}
+#icon-question4{
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+footer{
+    margin-top: 150px;
+}

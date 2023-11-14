@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="..//CSS/AboutUsPage1.css">
+
+    <link rel="stylesheet" href="..//CSS/bootstrap.min.css">
+
+    <script src="..//JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="..//HTML/HomePage.html" id="nav-item1">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../HTML/AboutUsPage.html" id="nav-item1">Về chúng tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="..//HTML/NewPage.html" id="nav-item1">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="..//HTML/BrokerPage.html" id="nav-item1">Môi giới</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false" id="nav-item1">Tư vấn</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="..//HTML/LegalAdvisoryPage.html">Luật</a></li>
+                        <li><a class="dropdown-item" href="..//HTML/FengShuiConsulting.html">Phong thuỷ</a></li>
+                        <li><a class="dropdown-item" href="..//HTML/QuestionAndAnswer.html">Hỏi đáp</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="..//HTML/LinkPage.html" id="nav-item1">Phần của bạn</a>
+                </li>
+            </ul>
+
+            <div class="icon-login-signup">
+
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" title="Đăng kí">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-people" viewBox="0 0 16 16">
+                        <path
+                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                    </svg>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Đăng kí</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Email">
+                                    <small id="emailHelp" class="form-text text-muted">
+                                        <i class="under-inputEmail">We'll never share your email with anyone else.</i>
+                                    </small>
+                                </div>
+                                <label for="inputPassword5" class="form-label">Password</label>
+                                <input type="password" id="inputPassword5" class="form-control"
+                                    aria-describedby="passwordHelpBlock" placeholder="Password">
+                                <small id="emailHelp" class="form-text text-muted">
+                                    <i class="under-inputEmail">We'll never share your password with anyone else.</i>
+                                </small>
+
+                                <div id="password-strength-status"></div>
+
+                                <div style="display: flex; align-items: center;">
+                                    <input type="checkbox" id="exampleCheck1" style="width: 20px; height: 20px;">
+                                    <label class="form-check-label" for="exampleCheck1" style="margin-top: 10px;">
+                                        Tôi đã đồng ý với các <a href="..//HTML/ClausePage.html">điều khoản</a> trên
+                                    </label>
+                                </div>
+
+                                <hr>
+
+                                <label for="exampleFormControlInput1" class="form-label">Đăng kí bằng</label>
+                                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" title="Google">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-google" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" title="Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-warning"
+                                    id="btn_signup_submit">Submit</button>
+                                <button type="button" class="btn btn-outline-danger"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $('#btn_signup_submit').click(function () {
+                            var email = $('#exampleFormControlInput1').val();
+                            var password = $('#inputPassword5').val();
+                            var terms = $('#exampleCheck1').is(':checked');
+                            var gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                            var passwordStrength = zxcvbn(password);
+
+                            var emailError = '';
+                            var passwordError = '';
+
+                            if (email === '') {
+                                emailError = 'Email không được bỏ trống';
+                            } else if (!gmailRegex.test(email)) {
+                                emailError = "Email nhập sai cú pháp";
+                            }
+
+                            if (password === '') {
+                                passwordError = 'Mật khẩu không được bỏ trống';
+                            } else if (passwordStrength.score < 4) {
+                                passwordError = "Mật khẩu chưa đủ mạnh";
+                            }
+
+                            if (emailError) {
+                                alert(emailError);
+                                return;
+                            }
+
+                            if (passwordError) {
+                                alert(passwordError);
+                                return;
+                            }
+
+                            if (!terms) {
+                                alert('Bạn phải đồng ý với các điều khoản');
+                                return;
+                            }
+
+                            alert('Đăng ký thành công');
+                            $('#exampleModal').modal('hide');
+                        });
+
+                        $("#inputPassword5").on('input', function () {
+                            var password = $("#inputPassword5").val();
+                            var passwordStrength = zxcvbn(password);
+                            if (passwordStrength.score == 0) {
+                                $("#password-strength-status").html("Yếu (Lời khuyên: mật khẩu nên có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và các ký tự đặc biệt.)").css("color", "red");
+                            } else if (passwordStrength.score == 1) {
+                                $("#password-strength-status").html("Vẫn Yếu").css("color", "orange");
+                            } else if (passwordStrength.score == 2) {
+                                $("#password-strength-status").html("Tốt").css("color", "blue");
+                            } else if (passwordStrength.score == 3) {
+                                $("#password-strength-status").html("Mạnh").css("color", "green");
+                            } else if (passwordStrength.score == 4) {
+                                $("#password-strength-status").html("Rất mạnh").css("color", "darkgreen");
+                            }
+                        });
+                    });
+                </script>
+
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal1" title="Đăng nhập">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                    </svg>
+                </button>
+
+                <!-- Modal -->
+
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+                            <form action="" id="registrationForm">
+
+                                <div class="modal-body">
+
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                        <!-- <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email"> -->
+                                        <input type="email" class="form-control" placeholder="gmail" id="email">
+                                    </div>
+                                    <label for="inputPassword5" class="form-label">Password</label>
+                                    <input type="password" id="password" class="form-control"
+                                        aria-describedby="passwordHelpBlock" placeholder="Password">
+
+                                    <label for="exampleFormControlInput1" class="form-label">Đăng nhập bằng</label>
+                                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" title="Google">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                                        </svg>
+                                    </button>
+
+                                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" title="Facebook">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg>
+                                    </button>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-warning"
+                                        id="btn_login_submit">Submit</button>
+                                    <button type="button" class="btn btn-outline-danger" id="btn_close"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </form>
+                            <div id="errorContainer" class="mt-3"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#btn_login_submit').click(function () {
+                            var email = $('#email').val();
+                            var password = $('#password').val();
+                            var gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                            var passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                            if (email === '') {
+                                alert('Email không được bỏ trống');
+                            }
+                            if (password === '') {
+                                alert('Mật khẩu không được bỏ trống');
+                            }
+                            if (gmailRegex.test(email)) {
+                                alert(email);
+                            } else {
+                                alert("Email nhập sai cú pháp");
+                            }
+                            if (passwordRegex.test(password)) {
+                                alert('*********');
+                            } else {
+                                alert("Mật khẩu nhập sai cú pháp");
+                            }
+                        });
+                    });
+                </script>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop" title="Thông báo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bell" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                    </svg>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Thông báo </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Bạn đã liên hệ với môi giới </div>
+                                            11:30:14 - Ngày 14/02/2023
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Bạn đã đặt cọc phòng 405 có mã số PTK345405 </div>
+                                            17:30:53 - Ngày 31/07/2023
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">1</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div class="ms-2 me-auto">
+                                            <div class="fw-bold">Đăng nhập thành công</div>
+                                            9:00:35 - Ngày 25/08/2023
+                                        </div>
+                                        <span class="badge bg-warning rounded-pill">1</span>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop1" title="Đóng góp ý kiến">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-hand-index" viewBox="0 0 16 16">
+                        <path
+                            d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435a4.9 4.9 0 0 1 .106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z" />
+                    </svg>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Đóng góp ý kiến</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2 class="fs-5">Cảm ơn bạn</h2>
+                                <p>đã đóng góp ý kiến về website. Chúng tôi sẽ ghi nhận và phản hồi sớm nhất cho bạn</p>
+                                <hr>
+                                <h2 class="fs-5">Khảo sát</h2>
+                                <p>
+                                <p>
+                                    Website của chúng tôi có dễ sử dụng?
+                                </p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Có
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Không
+                                    </label>
+                                </div>
+                                </p>
+                                <p>
+                                <p>
+                                    Bạn có từng bị lừa đảo qua các nhà môi giới không?
+                                </p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Có
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Không
+                                    </label>
+                                </div>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-danger"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-outline-warning">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="..//HTML/HomePage.html">
+                <img src="..//Image/Ảnh trang web Homeweb.png" alt="" class="rounded">
+            </a>
+            <p class="fs-2" id="font-logo">UY TÍNH & CHẤT LƯỢNG </p>
+
+            <div class="input-group mb-3">
+                <input id="txtTimKiem" type="text" class="form-control" placeholder="Tìm kiếm ..." aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+            </div>
+            <script>
+                function ktTimKiem(){
+                    let timKiem= $("#txtTimKiem").val();
+                    if(timKiem==""){
+                        return false;
+                    }
+                    else{
+                        return true;
+                    }
+                }
+                $("#txtTimKiem").blur(function(e){
+                    ktTimKiem();
+                });
+                $("#button-addon2").click(function(e){
+                    if(ktTimKiem()){
+                        let timKiem =$("#txtTimKiem").val();
+                        alert("Thành công")
+                    }
+                    else{
+                        alert("Thông tin không hợp lệ")
+                    }
+                });
+            </script>
+        </header>
+
+
+        <section>
+            <p class="fs-2" style="margin-top: 50px;">
+                ABOUT S-HOME COMPANY
+            </p>
+            <div class="row">
+                <div class="col-5">
+                    <p class="fs-3">
+                        Giới thiệu
+                    </p>
+                </div>
+                <div class="col-7">
+                    S-Home Company là một công ty có vị trí đặc biệt trong việc cung cấp các căn phòng tiện ích hàng
+                    đầu, luôn nói không với việc
+                    với việc trục lợi, là công ty luôn đồng hành cùng với giấc mơ, được hình thành từ năm 2023, với
+                    <strong>"S"</strong> đại diện <strong>Steadiness (sự bền bỉ)</strong> và
+                    <strong>"Home"</strong> đại diện cho máy ấm gia đình Việt.
+                    S-Home đã có hơn 40 chi nhánh tại các tỉnh/thành phố trên khắp cả nước, cùng với đó là những dự án
+                    siêu chất lượng và quy mô tầm cỡ.
+                    Chúng tôi hiện đang có hơn 4000 phòng, quy mô các nhà cao tầng và hàng ngàn căn phòng với các đánh
+                    giá 5 sao từ các bạn thuê phòng trước đây.
+                    Đối với chúng tôi khách hàng là niềm tự hào để sản phẩm của chúng tôi vượt xa hơn nữa. Mỗi năm chúng
+                    tôi đón khoảng hơn 3 triệu lượt khách thuê phòng
+                </div>
+                <img class="ounded mx-auto d-block" src="..//Image/Hành trình của s-home.png" alt=""
+                    title="Hành trình của S-Home">
+            </div>
+            <hr>
+            <div class="row">
+                <p class="fs-3">
+                    Ban lãnh đạo
+                </p>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card" style="width: 16rem;">
+                            <img src="..//Image/Ảnh_CV.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Giám đốc </h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Trường Đại học Công nghiệp TPHCM </li>
+                                <li class="list-group-item">Nguyễn Nguyễn Phong</li>
+                                <li class="list-group-item">21070601</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card" style="width: 16rem;">
+                            <img src="..//Image/Thuy.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Giám đốc </h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Trường Đại học Công nghiệp TPHCM </li>
+                                <li class="list-group-item">Lê Thị Ngọc Thuý</li>
+                                <li class="list-group-item">21070601</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 16rem;">
+                            <img src="..//Image/Kiệt.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Phó Giám đốc </h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Trường Đại học Công nghiệp TPHCM </li>
+                                <li class="list-group-item">Hà Lê Thế Kiệt</li>
+                                <li class="list-group-item">21070601</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 16rem;">
+                            <img src="..//Image/Vuong.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Phó Giám đốc </h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Trường Đại học Công nghiệp TPHCM </li>
+                                <li class="list-group-item">Trần Kế Tuấn Vương</li>
+                                <li class="list-group-item">21070601</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 16rem;">
+                            <img src="..//Image/Trang.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title"> Phó Giám đốc </h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Trường Đại học Công nghiệp TPHCM </li>
+                                <li class="list-group-item">Trần Thị Huyền Trang</li>
+                                <li class="list-group-item">21070601</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <hr>
+                <div>
+                    <div class="row">
+                        <div class="col-5">
+                            <p class="fs-3">
+                                Những tăng trưởng nổi bật
+                            </p>
+                        </div>
+                        <div class="col-7">
+                            <img class="ounded mx-auto d-block" src="..//Image/PhatTrien.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-5">
+                        <p class="fs-3">
+                            Triết lí kinh doanh
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        Sự hài lòng của khách hàng sẽ đánh giá chất lượng của chúng tôi
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-5">
+                        <p class="fs-3">
+                            Sứ mệnh
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        Khách hàng hài lòng - Nhân viên hạnh phúc
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-5">
+                        <p class="fs-3">
+                            Tầm nhìn
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        Là lựa chọn số 1 tại Việt Nam
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-5">
+                        <p class="fs-3">
+                            Giá trị cốt lõi
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        <ul class="content-AboutUs-dif">
+                            <li>Thoải mái - Đem lại cho khách hàng nơi tiện nghi hàng đầu</li>
+                            <li>Hài lòng - Phục vụ khách hàng tốt nhất</li>
+                            <li>Hành động - Giải quyết vấn đề nhà ở</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-5">
+                        <p class="fs-3">
+                            Liên hệ
+                        </p>
+                    </div>
+                    <div class="col-7">
+                        <ul class="content-AboutUs-dif">
+                            <li>&#9993; Email: s-home@gmail.com</li>
+                            <li>&#9742; Số điện thoại: 0856734522</li>
+                            <li>&#9992; Facebook: S-Home Đồng hành cùng khách hàng </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div class="row" id="footer-bootstrap">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Tải ngay tại</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 text-body-secondary" style="color: black;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-google-play" viewBox="0 0 16 16" style="color: #e29428;">
+                                    <path
+                                        d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                                </svg>
+                                Google Play
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 text-body-secondary" style="color: black;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-apple" viewBox="0 0 16 16" style="color: #e29428;">
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                    <path
+                                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                                </svg>
+                                Apple Store
+                            </a>
+                        </li>
+                        <li class="nav-item mb-3">
+                            <a href="#" class="nav-link p-0 text-body-secondary" style="color: black;">
+                                Hoặc truy cập www.s-home.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Tổng quan</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"
+                                style="color: black;">Trang chủ</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"
+                                style="color: black;">Về chúng tôi</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"
+                                style="color: black;">Tin tức</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"
+                                style="color: black;">Môi giới</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"
+                                style="color: black;">Tư vấn</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"
+                                style="color: black;">Liên kết</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Tham vấn qua</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-body-secondary" style="margin: 10px; padding: 10px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/1200px-Icon_of_Zalo.svg.png"
+                                    alt="" style="width: 50px;">&ensp;
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"
+                                    alt="" style="width: 50px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Đăng kí để nhận thông tin sớm nhất</h5>
+                        <p>Chúng tôi sẽ gửi email cho bạn về các dự án ra mắt.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <form action="" class="form">
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address" style="width: 400px !important; height: 40px; margin-top: 7px;">
+                                    <button class="btn btn-outline-warning" type="button" id="btn_Subscribe">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    function ktraEmail(){
+                        let email= $("#newsletter1").val();
+                        let btcq = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                        if(email==""){
+                            return false;
+                        }
+                        else if(btcq.test(email)){
+                            return true;
+                        }
+                        else{
+                            return false;
+                        }
+                    }
+                    $("#newsletter1").blur(function(e){
+                        ktraEmail();
+                    });
+                
+                    $("#btn_Subscribe").click(function(e){
+                        if(ktraEmail()){
+                            let diaChi =$("#newsletter1").val();
+                            alert("Thành công")
+                        }
+                        else{
+                            alert("Thông tin không hợp lệ")
+                        }
+                    });
+                </script>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2023 Company, Liên hệ: Email: s-home@gmail.com. Hotline: 0224 564 343 (2)</p>
+            </div>
+    </div>
+
+    <table align="center" width="80%" cellspacing="10" cellpadding="5" style="text-align: center"
+        class="table table-hover" id="footer-table-hover">
+        <colgroup>
+            <col style="width: 100;">
+        </colgroup>
+        <thead bgcolor="#ffa500">
+            <tr>
+                <th colspan="2"><strong>Mã số sinh viên</strong></th>
+                <th colspan="2"><strong>Họ và tên</strong></th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="2">21061001</td>
+                <td colspan="2">Trần Thị Huyền Trang</td>
+
+            </tr>
+            <tr>
+                <td colspan="2">21070601</td>
+                <td colspan="2">Nguyễn Nguyễn Phong</td>
+
+            </tr>
+            <tr>
+                <td colspan="2">21105581</td>
+                <td colspan="2">Hà Lê Thế Kiệt</td>
+            </tr>
+            <tr>
+                <td colspan="2">21061731</td>
+                <td colspan="2">Lê Thị Ngọc Thuý</td>
+            </tr>
+            <tr>
+                <td colspan="2">21054311</td>
+                <td colspan="2">Trần Kế Tuấn Vương</td>
+            </tr>
+        </tbody>
+    </table>
+    </footer>
+    </div>
+
+
+</body>
+
+</html>

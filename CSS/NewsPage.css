@@ -1,0 +1,138 @@
+.container{
+    font-family: cursive;
+}
+header{
+    height: 150px;
+    font-family: cursive;
+    background-image: url(..//Image/s-Home.gif);
+    background-size: 190px;
+    background-repeat: repeat-x;
+}
+.rounded{
+    width: 80px;
+    opacity: 0.9;
+}
+#font-logo{
+    font-family: cursive;
+    font-weight: 800;
+    color: white;
+}
+#button-addon2{
+    margin-top: 9px;
+    height: 39px !important;
+}
+#button-addon2:hover{
+    background-color: orange;
+}
+#search-header input{
+    height: 38px;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+.fs-3, .fst-italic, h5{
+    font-family: cursive;
+    font-weight: 800;
+}
+.dropdown-item:hover{
+    background-color:  orange;
+}
+.container header, section{
+    width: 100%;
+    margin: 0 auto;
+}
+#nav-item1{
+    color: 	white;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800;
+}
+.nav-pills .nav-item:hover{
+    background-color: #fab047;
+}
+.icon-login-signup{
+    display: block;
+    margin-top: -45px;
+    margin-left: 70%;
+}
+.btn-outline-warning{
+    margin: 10px;
+}
+header .fs-2{
+    position: relative;
+    top: -52px;
+    margin-left: 90px;
+    font-weight: 100px;
+    
+}
+header .input-group{
+    width: 500px;
+    position: relative;
+    top: -107px;
+    margin-left: 50%;
+
+}
+header .input-group .form-control {
+    border: 1px solid orange;
+    height: 39px;
+    margin-top: 9px;
+}
+.btn-outline-secondary{
+    border: 1px solid orange;
+}
+.fs-3{
+    margin-top: 50px;
+}
+.card {
+    margin-top: 30px;
+}
+.icon-link-hover{
+    font-style: oblique;
+    margin-left: 210px;
+}
+#list-advertisement{
+    margin-left: 66%;
+    margin-top: -75%;
+}
+.col-lg-8 h6 small{
+    color: black;
+}
+#mb-0-h6{
+    color: #000000;
+}
+
+
+#advertisement1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#new-ad .row .col-6{
+    margin-top: 40px;
+    width: 50%;
+}
+.list-card{
+    margin-left: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.final-ad{
+    margin-top: 50px;
+}
+footer{
+    margin-top: 150px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-7{
+    margin-top: 50px;
+}
+.col-7 ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: -30px;
+    padding: 7px;
+}

@@ -1,0 +1,99 @@
+header{
+    height: 150px;
+    height: 150px;
+    font-family: cursive;
+    background-image: url(..//Image/s-Home.gif);
+    background-size: 190px;
+    background-repeat: repeat-x;
+}
+.rounded{
+    width: 80px;
+    opacity: 0.9;
+}
+.container header,footer{
+    width: 100%;
+    margin: 0 auto;
+    font-family: cursive;
+}
+#font-logo{
+    font-family: cursive;
+    font-weight: 800;
+    color: white;
+}
+#nav-item1{
+    color: 	white;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 800;
+}
+.nav-pills .nav-item:hover{
+    background-color: orange;
+}
+#button-addon2, .form-control{
+    margin-top: 9px;
+    height: 39px !important;
+}
+.form-control{
+    opacity: 0.6;
+}
+#button-addon2:hover{
+    background-color: orange;
+}
+.dropdown-item:hover{
+    background-color:  orange;
+}
+#search-header input{
+    height: 38px;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+.icon-login-signup{
+    display: block;
+    margin-top: -45px;
+    margin-left: 70%;
+}
+.btn-outline-warning{
+    margin: 10px;
+}
+header .fs-2{
+    position: relative;
+    top: -52px;
+    margin-left: 90px;
+    font-weight: 100px;
+    
+}
+header .input-group{
+    width: 500px;
+    position: relative;
+    top: -107px;
+    margin-left: 50%;
+
+}
+header .input-group .form-control {
+    border: 1px solid orange;
+}
+.btn-outline-secondary{
+    border: 1px solid orange;
+}
+section{
+    text-align: justify;
+    font-family: cursive;
+}
+article .card{
+    width: 300px;
+    margin: 50px;
+}
+
+.content-Tableofcontents *{
+    border-radius: 10px;
+    list-style: none;
+}
+.content-Tableofcontents ul li a{
+    text-decoration: none;
+}
+.row .col-12{
+    margin-top: 50px;
+}
+footer{
+    margin-top: 100px;
+}
